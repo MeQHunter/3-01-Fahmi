@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -35,8 +37,5 @@ Route::get('/gallery', function () {
     ]);
 });
 
-Route::get('/contacts', function () {
-    return view('contacts', [
-    "title" => "Contacts"
-    ]);
-});
+use App\Http\Controllers\ContactController;
+Route::resource('/contacts', ContactController::class);
