@@ -1,1 +1,1 @@
-alert ("hallo, selamat datang di website saya ");
+alert ("Hallo, Selamat datang di Website saya")
